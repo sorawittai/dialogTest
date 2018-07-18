@@ -14,17 +14,17 @@ if($method == "POST"){
 	
 	if($input_com == "input.conpany")
 	{
-		
+		if($date > $today)
+		{
+			$speech = "ไม่มีข้อมูล";
+		}
+		else
+		{
+			$speech = "นี่ค่ะ ข้อมูลบริษัท ". $company . " ของวัน " . $date;
+		}
 	}
 
-	if($date > $today)
-	{
-		$speech = "ไม่มีข้อมูล";
-	}
-	else
-	{
-		$speech = "นี่ค่ะ ข้อมูลบริษัท ". $company . " ของวัน " . $date;
-	}
+	
 	//$speech = $date . $today ;
 	
 	$response = new\stdClass();
