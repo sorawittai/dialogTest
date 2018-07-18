@@ -7,7 +7,7 @@ if($method == "POST"){
 
 	$company = $json->result->parameters->companie;
 	$date = $json->result->parameters->toDate;
-	$today = new Date;
+	$today = Date();
 
 	/*if($date == $today)
 	{
