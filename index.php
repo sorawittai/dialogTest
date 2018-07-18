@@ -7,7 +7,7 @@ if($method == "POST"){
 
 	$company = $json->result->parameters->companie;
 	$date = $json->result->parameters->toDate;
-	$today = new date();
+	$today = date;
 
 	if(strtotime($date) > strtotime($today))
 	{
@@ -24,10 +24,10 @@ if($method == "POST"){
 	$response->source="webhook";
 	echo json_encode($response);
 
-}else
+}
+else
 {
 	echo "Method not aloowed";
 }
-
 
 ?>
