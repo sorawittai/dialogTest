@@ -17,7 +17,7 @@ if($method == "POST"){
 	{
 		$speech = $today;
 	}*/
-	$speech = '$company' . '$today';
+	$speech = $company . $today;
 
 	$response = new\stdClass();
 	$response->speech= $speech;
