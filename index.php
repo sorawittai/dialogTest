@@ -5,9 +5,17 @@ if($method == "POST"){
 	$requestBody = file_get_contents('php://input');
 	$json = json_decode($requestBody);
 
+		
+
 	$company = $json->result->parameters->companie;
+	$input_com =$json->result->action;
 	$date = $json->result->parameters->toDate;
 	$today = date('Y-m-d');
+	
+	if($input_com == "input.conpany")
+	{
+		
+	}
 
 	if($date > $today)
 	{
