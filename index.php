@@ -7,9 +7,9 @@ if($method == "POST"){
 
 	$company = $json->result->parameters->companie;
 	$date = $json->result->parameters->toDate;
-	$today = Date('7/18/2018');
+	$today = Date('18/17/2018');
 
-	/*if($date == $today)
+	if($date > $today)
 	{
 		$speech = "ไม่มีข้อมูล";
 	}
@@ -17,8 +17,7 @@ if($method == "POST"){
 	{
 		$speech = "นี่ค่ะ ขอมูลบริษัท ". $company . " ของวัน " . $date;
 	}
-*/
-	$speech = $date . $today ;
+	//$speech = $date . $today ;
 	
 	$response = new\stdClass();
 	$response->speech= $speech;
