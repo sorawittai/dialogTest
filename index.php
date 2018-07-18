@@ -9,15 +9,15 @@ if($method == "POST"){
 	$date = $json->result->parameters->toDate;
 	$today = date('Y/m/d');
 
-	/*if($date > $today)
+	if($date > $today)
 	{
 		$speech = "ไม่มีข้อมูล";
 	}
 	else
 	{
 		$speech = "นี่ค่ะ ข้อมูลบริษัท ". $company . " ของวัน " . $date;
-	}*/
-	$speech = $date . $today ;
+	}
+	//$speech = $date . $today ;
 	
 	$response = new\stdClass();
 	$response->speech= $speech;
