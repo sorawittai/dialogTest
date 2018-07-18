@@ -7,17 +7,17 @@ if($method == "POST"){
 
 	$company = $json->result->parameters->companie;
 	$date = $json->result->parameters->toDate;
-	$today = Date('18/07/2018');
+	$today = date('d/m/y');
 
-	if($date > $today)
+	/*if($date > $today)
 	{
 		$speech = "ไม่มีข้อมูล";
 	}
 	else
 	{
 		$speech = "นี่ค่ะ ข้อมูลบริษัท ". $company . " ของวัน " . $date;
-	}
-	//$speech = $date . $today ;
+	}*/
+	$speech = $date . $today ;
 	
 	$response = new\stdClass();
 	$response->speech= $speech;
