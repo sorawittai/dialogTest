@@ -8,12 +8,9 @@ if($method == "POST"){
 	
 
 	$input = $json->result->action;
-
-
 	
 	if($input == "input.company")
 	{
-		
 		
 	$company = $json->result->parameters->companie;
 	$date = $json->result->parameters->toDate;
@@ -32,9 +29,9 @@ if($method == "POST"){
 	else if($input == "input.icecream")
 	{
 		
-	$Flavor = $json->result->parameters->Flavor;
+	/*$Flavor = $json->result->parameters->Flavor;
 	$Cataegory = $json->result->parameters->Cataegory;
-	$Number = $json->result->parameters->number
+	$Number = $json->result->parameters->number*/
 		
 		$speech = "นี่ค่ะไอศกรีม " . $Flavor ." " . $Number . " " . $Category;
 	}
