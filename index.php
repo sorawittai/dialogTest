@@ -5,6 +5,11 @@ if($method == "POST"){
 	$requestBody = file_get_contents('php://input');
 	$json = json_decode($requestBody);
 
+	
+	$Flavor = $json->result->parameters->Flavor;
+	$input_ice =$json->result->action;
+	$Cataegory = $json->result->parameters->Cataegory;
+	$Number = $json->result->parameters->number
 		
 
 	$company = $json->result->parameters->companie;
@@ -22,6 +27,10 @@ if($method == "POST"){
 		{
 			$speech = "นี่ค่ะ ข้อมูลบริษัท ". $company . " ของวัน " . $date;
 		}
+	}
+	else
+	{
+		$speech = "นี่ค่ะไอศกรีม " . $Flavor ." " . $Number . " " . $Category;
 	}
 
 	
