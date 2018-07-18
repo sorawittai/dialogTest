@@ -7,9 +7,9 @@ if($method == "POST"){
 
 	$company = $json->result->parameters->companie;
 	$date = $json->result->parameters->toDate;
-	$today = new date;
+	$today = date;
 
-	if($date > $today)
+	if($date == $today)
 	{
 		$speech = "ไม่มีข้อมูล";
 	}
