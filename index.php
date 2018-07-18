@@ -6,19 +6,19 @@ if($method == "POST"){
 	$json = json_decode($requestBody);
 
 	
-	$Flavor = $json->result->parameters->Flavor;
-	$input_ice =$json->result->action;
-	$Cataegory = $json->result->parameters->Cataegory;
-	$Number = $json->result->parameters->number
-		
 
+	$input = $json->result->action;
+
+
+	
+	if($input == "input.company")
+	{
+		
+		
 	$company = $json->result->parameters->companie;
-	$input_com =$json->result->action;
 	$date = $json->result->parameters->toDate;
 	$today = date('Y-m-d');
-	
-	if($input_com == "input.company")
-	{
+		
 		if($date > $today)
 		{
 			$speech = "ไม่มีข้อมูล";
@@ -29,8 +29,13 @@ if($method == "POST"){
 		}
 	}
 	
-	else if($input_ice == "input.icecream")
+	else if($input == "input.icecream")
 	{
+		
+	$Flavor = $json->result->parameters->Flavor;
+	$Cataegory = $json->result->parameters->Cataegory;
+	$Number = $json->result->parameters->number
+		
 		$speech = "นี่ค่ะไอศกรีม " . $Flavor ." " . $Number . " " . $Category;
 	}
 
