@@ -5,8 +5,8 @@ if($method == "POST"){
 	$requestBody = file_get_contents('php://input');
 	$json = json_decode($requestBody);
 
-	$company = $json->result->parameters->Company;
-	$today = $json->result->parameters->date;
+	$company = $json->result->parameters->companie;
+	$today = $json->result->parameters->toDate;
 	$date = new date();
 
 	/*if($today < $date)
