@@ -9,7 +9,7 @@ if($method == "POST"){
 	$date = $json->result->parameters->toDate;
 	$today = new date();
 
-	if($date > $today)
+	if(strtotime($date) > strtotime($today))
 	{
 		//$speech = "ไม่มีข้อมูล";
 	}
