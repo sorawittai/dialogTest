@@ -7,7 +7,7 @@ if($method == "POST"){
 
 	$company = $json->result->parameters->companie;
 	$date = $json->result->parameters->toDate;
-	$today = Date('18/17/2018');
+	$today = new Date('18/17/2018');
 
 	if($date > $today)
 	{
@@ -15,7 +15,7 @@ if($method == "POST"){
 	}
 	else
 	{
-		$speech = "นี่ค่ะ ขอมูลบริษัท ". $company . " ของวัน " . $date;
+		$speech = "นี่ค่ะ ข้อมูลบริษัท ". $company . " ของวัน " . $date;
 	}
 	//$speech = $date . $today ;
 	
