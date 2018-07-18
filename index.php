@@ -6,18 +6,17 @@ if($method == "POST"){
 	$json = json_decode($requestBody);
 
 	$company = $json->result->parameters->companie;
-	$today = $json->result->parameters->toDate;
-	//$date = new date();
+	$date = $json->result->parameters->toDate;
+	$today = new date();
 
-	/*if($today < $date)
+	if($date > $today)
 	{
-		
+		$speech = "ไม่มีข้อมูล";
 	}
 	else
 	{
-		$speech = $today;
-	}*/
-	$speech = $company . $today;
+		$speech = "นี่ค่ะ ขอมูลบริษัท ". $company . " ของวัน " . $date;
+	}
 
 	$response = new\stdClass();
 	$response->speech= $speech;
