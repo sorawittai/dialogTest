@@ -11,11 +11,11 @@ if($method == "POST"){
 
 	if($date > $today)
 	{
-		//$speech = "ไม่มีข้อมูล";
+		$speech = "ไม่มีข้อมูล";
 	}
 	else
 	{
-		//$speech = "นี่ค่ะ ขอมูลบริษัท ". $company . " ของวัน " . $date;
+		$speech = "นี่ค่ะ ขอมูลบริษัท ". $company . " ของวัน " . $date;
 	}
 
 	$response = new\stdClass();
