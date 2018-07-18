@@ -12,7 +12,7 @@ if($method == "POST"){
 	$date = $json->result->parameters->toDate;
 	$today = date('Y-m-d');
 	
-	if($input_com == "input.conpany")
+	if($input_com == "input.company")
 	{
 		if($date > $today)
 		{
