@@ -28,7 +28,8 @@ if($method == "POST"){
 			$speech = "นี่ค่ะ ข้อมูลบริษัท ". $company . " ของวัน " . $date;
 		}
 	}
-	else
+	
+	else if($input_ice == "input.icecream")
 	{
 		$speech = "นี่ค่ะไอศกรีม " . $Flavor ." " . $Number . " " . $Category;
 	}
