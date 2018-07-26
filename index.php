@@ -9,7 +9,7 @@ if($method == "POST"){
 
 	$input = $json->result->action;
 	
-	/*if($input == "input.company")
+	if($input == "input.company")
 	{
 		
 	$company = $json->result->parameters->companie;
@@ -24,9 +24,9 @@ if($method == "POST"){
 		{
 			$speech = "นี่ค่ะ ข้อมูลบริษัท ". $company . " ของวัน " . $date;
 		}
-	}*/
+	}
 	
-	if($input == "input.icecream")
+	else if($input == "input.icecream")
 	{
 		
 	$fv = $json->result->parameters->Flavor;
