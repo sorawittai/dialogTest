@@ -11,7 +11,7 @@ if($method == "POST"){
 	
 	if($input == "input.company")
 	{
-		
+	*/	
 	$company = $json->result->parameters->companie;
 	$date = $json->result->parameters->toDate;
 	$today = date('Y-m-d');
@@ -24,17 +24,17 @@ if($method == "POST"){
 		{
 			$speech = "นี่ค่ะ ข้อมูลบริษัท ". $company . " ของวัน " . $date;
 		}
-	}*/
+	}
 	
-	//else if($input == "input.icecream")
-	//{
+	/*else if($input == "input.icecream")
+	{
 		
 	$fv = $json->result->parameters->Flavor;
 	$cg = $json->result->parameters->Cataegory;
 	$nb = $json->result->parameters->number
 		
 		$speech = "นี่ค่ะไอศกรีม " . $fv ." " . $nb . " " . $cg;
-	//}
+	}*/
 
 	
 	//$speech = $date . $today ;
