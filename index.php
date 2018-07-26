@@ -30,7 +30,7 @@ if($method == "POST"){
 	{
 		
 	$fv = $json->result->parameters->Flavor;
-	$cg = $json->result->parameters->Cataegory;
+	$cg = $json->result->parameters->Category;
 	$nb = $json->result->parameters->number;
 		
 		$speech = "นี่ค่ะไอศกรีม " . $fv ." " . $nb . " " . $cg;
