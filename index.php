@@ -7,11 +7,11 @@ if($method == "POST"){
 
 	
 
-	/*$input = $json->result->action;
+	$input = $json->result->action;
 	
 	if($input == "input.company")
 	{
-	*/	
+		
 	$company = $json->result->parameters->companie;
 	$date = $json->result->parameters->toDate;
 	$today = date('Y-m-d');
@@ -26,7 +26,7 @@ if($method == "POST"){
 		}
 	}
 	
-	/*else if($input == "input.icecream")
+	else if($input == "input.icecream")
 	{
 		
 	$fv = $json->result->parameters->Flavor;
@@ -34,7 +34,7 @@ if($method == "POST"){
 	$nb = $json->result->parameters->number
 		
 		$speech = "นี่ค่ะไอศกรีม " . $fv ." " . $nb . " " . $cg;
-	}*/
+	}
 
 	
 	//$speech = $date . $today ;
