@@ -26,15 +26,15 @@ if($method == "POST"){
 		}
 	}*/
 	
-	//else if($input == "input.icecream")
-	//{
+	if($input == "input.icecream")
+	{
 		
-	$Flavor = $json->result->parameters->Flavor;
-	$Cataegory = $json->result->parameters->Cataegory;
-	$Number = $json->result->parameters->number
+	$flavor = $json->result->parameters->Flavor;
+	$cataegory = $json->result->parameters->Cataegory;
+	$number = $json->result->parameters->number
 		
-		$speech = "นี่ค่ะไอศกรีม " . $Flavor ." " . $Number . " " . $Category;
-	//}
+		$speech = "นี่ค่ะไอศกรีม " . $flavor ." " . $number . " " . $cataegory;
+	}
 
 	
 	//$speech = $date . $today ;
