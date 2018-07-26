@@ -29,11 +29,11 @@ if($method == "POST"){
 	if($input == "input.icecream")
 	{
 		
-	$flavor = $json->result->parameters->Flavor;
-	$cataegory = $json->result->parameters->Cataegory;
-	$number = $json->result->parameters->number
+	$fv = $json->result->parameters->Flavor;
+	$cg = $json->result->parameters->Cataegory;
+	$nb = $json->result->parameters->number
 		
-		$speech = "นี่ค่ะไอศกรีม " . $flavor ." " . $number . " " . $cataegory;
+		$speech = "นี่ค่ะไอศกรีม " . $fv ." " . $nb . " " . $cg;
 	}
 
 	
